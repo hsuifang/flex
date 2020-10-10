@@ -1,0 +1,67 @@
+.card {
+  width: 100%;
+  &__header {
+    background-color: $secondary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 16rem;
+    h2 {
+      color: $primary;
+      font-size: 5rem;
+    }
+  }
+  &__body {
+    padding: 2rem;
+    h3 {
+      color: $primary;
+      font-size: 1.5rem;
+      margin-bottom: 1.8rem;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  }
+}
+
+//
+.promotionCard {
+  background-color: $secondary;
+  padding: 1rem;
+  h3 {
+    color: $primary;
+    font-weight: bold;
+    padding: 1rem 1rem 0;
+  }
+  p {
+    color: $primary;
+    padding: 0 1rem;
+  }
+}
+.promotionCard--type1 {
+  display: flex;
+  align-items: flex-start;
+  > img {
+    display: block;
+    width: 15%;
+  }
+}
+.promotionCard--type2 {
+  > img {
+    display: block;
+    margin: auto;
+  }
+  h3, p {
+    text-align: center;
+  }
+}
+.promotionCard--type3 {
+  display: flex;
+  align-items: center;
+}
+.promotionCard--type4 {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
